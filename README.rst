@@ -108,13 +108,13 @@ is the directory with custom plugins of oh-my-zsh `(read more) <https://github.c
 
 ::
 
-    git clone "https://github.com/hanslemm/autoswitch-virtualenv.git" "$ZSH_CUSTOM/plugins/autoswitch_virtualenv"
+    git clone "https://github.com/hanslemm/autoswitch-virtualenv.git" "$ZSH_CUSTOM/plugins/autoswitch-virtualenv"
 
 Then add this line to your ``.zshrc``. Make sure it is **before** the line ``source $ZSH/oh-my-zsh.sh``.
 
 ::
 
-    plugins=(autoswitch_virtualenv $plugins)
+    plugins=(autoswitch-virtualenv $plugins)
 
 Manual Installation
 '''''''''''''''''''
@@ -123,7 +123,7 @@ Source the plugin shell script in your `~/.zshrc` profile. For example
 
 ::
 
-   source $HOME/zsh-autoswitch-virtualenv/autoswitch_virtualenv.plugin.zsh
+   source $HOME/zsh-autoswitch-virtualenv/autoswitch-virtualenv.plugin.zsh
 
 
 Pipenv and Poetry Integration
@@ -204,13 +204,13 @@ This will delete the virtual environment in ``.venv`` and remove the
 Similar to ``mkvenv``, the ``rmvenv`` command also works as you would
 expect with removing ``poetry`` and ``pipenv`` projects.
 
-disable_autoswitch_virtualenv
+disable_autoswitch-virtualenv
 '''''''''''''''''''''''''''''
 
 Temporarily disables autoswitching of virtualenvs when moving between
 directories.
 
-enable_autoswitch_virtualenv
+enable_autoswitch-virtualenv
 ''''''''''''''''''''''''''''
 
 Re-enable autoswitching of virtualenvs (if it was previously disabled).
